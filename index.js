@@ -8,6 +8,7 @@ import cors from "cors";
 import session from "express-session";
 import "dotenv/config";
 import AssignmentRoutes from './Kanbas/Assignments/routes.js';
+import EnrollmentRoutes from "./Kanbas/Enrollments/routes.js";
 
 // Initialize express app
 const app = express();
@@ -103,6 +104,7 @@ UserRoutes(app);
 CourseRoutes(app);
 ModuleRoutes(app);
 AssignmentRoutes(app);
+EnrollmentRoutes(app);
 Lab5(app);
 
 // Error handling middleware
