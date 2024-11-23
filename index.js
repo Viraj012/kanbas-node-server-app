@@ -1,5 +1,3 @@
-
-
 import express from 'express';
 import Hello from "./Hello.js";
 import Lab5 from "./Lab5/index.js";
@@ -9,6 +7,7 @@ import ModuleRoutes from "./Kanbas/Modules/routes.js";
 import cors from "cors";
 import session from "express-session";
 import "dotenv/config";
+import AssignmentRoutes from './Kanbas/Assignments/routes.js';
 
 // Initialize express app
 const app = express();
@@ -103,6 +102,7 @@ Hello(app);
 UserRoutes(app);
 CourseRoutes(app);
 ModuleRoutes(app);
+AssignmentRoutes(app);
 Lab5(app);
 
 // Error handling middleware
